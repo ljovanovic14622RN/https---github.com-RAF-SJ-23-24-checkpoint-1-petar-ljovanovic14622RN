@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vezba 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<main class="container">
+    <div class ="row">
+        <nav class="navbar navbar-expand-sm">
+
+            <div class="container-fluid">
+            
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="14622rn.html">Glavna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="automobili.html">Ponuda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="karoserije.html">Karoserija</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="opreme.html">Oprema</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="narudzbine.html">Narudzbine</a>
+                </li>
+              </ul>
+            </div>
+          
+          </nav>
+
+    </div>
+  <h1>Detalji narudzbine</h1>
+    <form method=post action=http://postman-echo.com/post id = "forma">
+
+        <dl class="row">
+            <dt class="col-sm-3">Vreme porudzbine</dt>
+            <dd class="col-sm-9">21.3.2023 21:05</dd>
+          
+            <dt class="col-sm-3">Sadržaj narudžbine</dt>
+            <dd class="col-sm-9">
+              <ul id="sadrzaj">
+                <li>Porsche Coupe x2</li>
+                <li>Mercedes Benz Sedan x1</li>
+                <li>Suzuki HatchBack x1</li>
+              </ul>
+            </dd>
+
+
+
+            <!-- <dt class="col-sm-3">Vreme porudzbine</dt>
+            <dd class="col-sm-9">15.3.2023 09:05</dd>
+          
+            <dt class="col-sm-3">Sadržaj narudžbine</dt>
+            <dd class="col-sm-9">
+              <ul id="sadrzaj">
+                <li>Porsche Coupe x2</li>
+              </ul>
+            </dd>
+
+
+            <dt class="col-sm-3">Vreme porudzbine</dt>
+            <dd class="col-sm-9">22.10.2023 23:59</dd>
+          
+            <dt class="col-sm-3">Sadržaj narudžbine</dt>
+            <dd class="col-sm-9">
+              <ul id="sadrzaj">
+                <li>Mercedes Benz Sedan x1</li>
+                <li>Suzuki HatchBack x1</li>
+              </ul>
+            </dd> -->
+
+            <select onchange=" document.getElementById('forma').submit() " style="width: 150px; margin-left: 20px;">
+                <option value="1">Novo</option>
+                <option value="2">Prihvaćeno</option>
+                <option value="3">Odbijeno</option>
+                <option value="4">U pripremi</option>
+                <option value="5">U dostavi</option>
+                <option value="6">Završeno</option>
+              </select>
+
+              </dl>
+ 
+</form>
+  
+</main>
+
+</body>
+</html>

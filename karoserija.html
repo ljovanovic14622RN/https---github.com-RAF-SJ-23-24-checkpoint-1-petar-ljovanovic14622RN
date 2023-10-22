@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vezba 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <script src="automobil.js"></script>
+</head>
+<body>
+
+<main class="container">
+    <div class = "container mt-3">
+    <h1>Karoserija</h1>
+
+    
+    <form method=post action=http://postman-echo.com/post id = "forma" onsubmit="return validacija()">
+
+        <div>
+            <label for="karoserija">Karoserija:</label>
+            <input type="text" class="form-control mb-3" id="karoserija" 
+                      name="karoserija" required>
+          </div>
+      
+
+    
+        <div class ="mt-3 mb-5  ">
+        <button class="btn btn-dark">Sacuvaj</button>
+
+        <a href="#" class="btn btn-danger">Obriši</a>
+        <a href="karoserije.html" class="btn btn-link">Nazad</a>
+        </div>
+
+      </form>
+
+
+  
+    </div>
+
+
+  
+</main>
+
+<script>
+    function validacija(){    
+        var validno = true;
+        if( document.getElementById("karoserija").value.length < 3 ){
+    validno=false;
+    document.getElementById("karoserija").classList.add("error");
+    document.getElementById("karoserija").classList.remove("success");
+
+        }
+        else {
+    document.getElementById("karoserija").classList.add("success");
+    document.getElementById("karoserija").classList.remove("error");
+    }
+
+    return validno;
+    }
+</script>
+
+</body>
+</html>
